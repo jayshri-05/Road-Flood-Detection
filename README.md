@@ -1,70 +1,77 @@
+# 🌊 Road Flood Detection
 
----
+An automated computer vision project that detects and segments flooded road areas using a custom-trained **YOLOv8 Nano Segmentation model**.
 
-# Road Flood Detection 
+## 🚀 Overview
 
-An automated computer vision project designed to detect and segment flooded areas on roads using a custom-trained **YOLOv8 nano segmentation model (`yolov8n-seg.pt`)**. This system is built to assist in real-time disaster monitoring, road safety, and automated hazard analysis.
+This project uses deep learning-based instance segmentation to identify and outline water accumulation on roads from images and videos. It aims to support road safety, flood monitoring, and disaster management.
 
----
+## ✨ Key Features
 
-## 🚀 Project Overview
+- Flood detection and segmentation using YOLOv8.
+- Image and video-based inference.
+- Visual segmentation masks highlighting flooded regions.
+- Lightweight YOLOv8 Nano architecture.
 
-Traditional flood monitoring relies heavily on manual inspections or stationary infrastructure, which can be slow during emergency responses. This project utilizes deep learning-based **instance and semantic segmentation** via Ultralytics YOLOv8 to accurately outline water bodies and flooded roadways from images or video feeds.
+## 🛠️ Tech Stack
 
-### Key Features:
-
-* **Custom Segmentation:** Detects and delineates water pixels on roads using fine-tuned YOLOv8 segmentation weights.
-* **Automated Inference Scripts:** Includes dedicated scripts for training and testing/validation.
-* **Lightweight & Efficient:** Optimized using the YOLOv8n architecture for rapid processing.
-
----
+- **Language:** Python
+- **Framework:** PyTorch, Ultralytics YOLOv8
+- **Libraries:** OpenCV, NumPy, PyYAML
 
 ## 📂 Repository Structure
 
 ```text
 Road-Flood-Detection/
 │
-├── data.yaml          # Dataset configuration file for YOLO training
-├── train.py           # Script for training the YOLOv8 segmentation model
-├── test_flood.py      # Script for running flood detection/inference
-├── .gitignore         # Specifies intentionally untracked files (datasets & heavy weights)
-└── README.md          # Project documentation
-
+├── data.yaml
+├── train.py
+├── test_flood.py
+├── .gitignore
+└── README.md
 ```
 
-
-
-
-
-## 🛠️ Tech Stack & Prerequisites
-
-* **Language:** Python
-* **Framework:** Ultralytics YOLOv8 (PyTorch)
-* **Libraries:** OpenCV, NumPy, PyYAML
-
-## 💻 Usage Instructions
-
-### 1. Training the Model
-
-To train the YOLOv8 segmentation model using your custom dataset configuration (`data.yaml`):
-
-
-python train.py
-
-
-### 2. Running Flood Detection / Testing
-
-To run inference and test the model on validation/test images or video streams:
+## ⚙️ Installation
 
 ```bash
-python test_flood.py
-
+git clone https://github.com/YOUR_USERNAME/Road-Flood-Detection.git
+cd Road-Flood-Detection
+pip install ultralytics opencv-python numpy pyyaml
 ```
 
----
+## 💻 Usage
 
-## 📊 Dataset
+**Train the model:**
+```bash
+python train.py
+```
 
-The model is configured to train on annotated image datasets (compatible with Roboflow export formats) mapped via `data.yaml`. Each image undergoes processing to detect pixel-level water accumulation hazards on roadways.
+**Run flood detection:**
+```bash
+python test_flood.py
+```
 
----
+## 📊 Dataset & Model
+
+- **Model:** YOLOv8 Nano Segmentation (`yolov8n-seg.pt`)
+- **Task:** Instance Segmentation
+- **Dataset:** Custom annotated flood dataset compatible with YOLO format.
+- **Configuration:** `data.yaml`
+
+## 📸 Results
+
+The model generates segmentation masks highlighting flooded regions in road images and videos.
+
+*Add screenshots of the original input and segmentation output here.*
+
+## 🔮 Future Scope
+
+- Real-time CCTV-based flood monitoring.
+- GPS-based flood location identification.
+- Automated road hazard alerts.
+
+## 👥 Contributors
+
+- Pratiksha Baskaran
+- Jayshri MS
+- Monish RV
