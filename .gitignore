@@ -1,0 +1,5 @@
+﻿yolov8n-seg.pt
+runs/
+train/
+valid/
+test/

@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['water']
+
+roboflow:
+  workspace: jayshri-m-s
+  project: floodedroads-jghz8-dy1yg
+  version: 1
+  license: CC BY 4.0
+  url: https://app.roboflow.com/jayshri-m-s/floodedroads-jghz8-dy1yg/1
