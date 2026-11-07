@@ -1,7 +1,7 @@
 
 ---
 
-# Road Flood Detection (YOLOv8-Seg)
+# Road Flood Detection 
 
 An automated computer vision project designed to detect and segment flooded areas on roads using a custom-trained **YOLOv8 nano segmentation model (`yolov8n-seg.pt`)**. This system is built to assist in real-time disaster monitoring, road safety, and automated hazard analysis.
 
