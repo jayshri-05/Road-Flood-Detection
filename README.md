@@ -32,9 +32,9 @@ Road-Flood-Detection/
 
 ```
 
-*(Note: Heavy directories like `train/`, `valid/`, `test/`, `runs/`, and the large model weights file `yolov8n-seg.pt` are excluded from version control via `.gitignore` to keep the repository lightweight).*
 
----
+
+
 
 ## 🛠️ Tech Stack & Prerequisites
 
@@ -48,10 +48,9 @@ Road-Flood-Detection/
 
 To train the YOLOv8 segmentation model using your custom dataset configuration (`data.yaml`):
 
-```bash
+
 python train.py
 
-```
 
 ### 2. Running Flood Detection / Testing
 
